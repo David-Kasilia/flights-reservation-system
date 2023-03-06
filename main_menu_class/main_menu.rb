@@ -11,7 +11,6 @@ module Main
   def self.main_menu
     loop do
       # display the main menu options
-      puts "Welcome to the Flight Reservation System\n\n"
       puts "Please select an option:\n\n"
       puts "1. List all flights"
       puts "2. List all international flights"
