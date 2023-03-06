@@ -29,21 +29,21 @@ module Main
       # perform the selected action
       case menu_option
       when 1
-        list_all_flights
+        FlightsModule.list_all_flights
       when 2
-        list_all_international_flights
+        FlightsModule.list_all_international_flights
       when 3
-        list_all_passengers
+        PassangersModule.list_all_passengers
       when 4
-        add_a_new_flight
+        FlightsModule.add_a_new_flight
       when 5
-        add_a_new_international_flight
+        FlightsModule.add_a_new_international_flight
       when 6
-        add_a_new_passenger
+        PassangersModule.add_a_new_passenger
       when 7
-        make_a_reservation
+        ReservationsModule.add_a_new_reservation
       when 8
-        list_all_reservations
+        ReservationsModule.list_all_reservations
       when 9
         exit
       else
@@ -54,6 +54,6 @@ module Main
   end
 end
 
-# run the main menu loop
-Main.main_menu
+# # run the main menu loop
+# Main.main_menu
 

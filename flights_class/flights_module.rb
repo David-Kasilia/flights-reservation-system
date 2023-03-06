@@ -5,7 +5,7 @@ module FlightsModule
    @flights = []
    @international_flights = []
 
-   def list_all_flights
+   def self.list_all_flights
     if @flights.empty?
       puts "There are no flights found in the list!!"
       puts "Kindly add at least one flight to have a list of flights"
@@ -17,7 +17,7 @@ module FlightsModule
     end
   end
   
-  def list_all_international_flights
+  def self.list_all_international_flights
     if @international_flights.empty?
       puts "There are no international flights found in the list!!"
       puts "Kindly add at least one international flight to have a list of flights"
@@ -29,7 +29,7 @@ module FlightsModule
     end
   end
 
-   def add_a_new_flight
+   def self.add_a_new_flight
     puts "Add a new flight"
     print "Airline: "
     airline = gets.chomp
@@ -50,7 +50,7 @@ module FlightsModule
     puts "New flight added: #{new_flight.airline} #{new_flight.flight_number} to #{new_flight.destination}"
   end
 
-  def add_a_new_international_flight
+  def self.add_a_new_international_flight
     puts "Add a new international flight"
     print "Airline: "
     airline = gets.chomp

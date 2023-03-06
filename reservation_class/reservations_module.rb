@@ -3,7 +3,7 @@ require_relative './reservation'
 module ReservationsModule
     @reservations = []
 
-  def list_all_reservations
+  def self.list_all_reservations
     if @reservations.empty?
       puts "No reservations found!"
     else
@@ -14,7 +14,7 @@ module ReservationsModule
     end
   end
 
-  def add_a_new_reservation
+  def self.add_a_new_reservation
     puts "Add a new reservation"
     print "Passenger passport number: "
     passport_number = gets.chomp

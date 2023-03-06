@@ -2,9 +2,9 @@ require_relative './passanger'
 
 module PassangersModule
 
-    @passangers = []
+    @passengers = []
 
-    def list_all_passengers
+    def self.list_all_passengers
     if @passengers.empty?
       puts "No passengers found!"
     else
@@ -15,7 +15,7 @@ module PassangersModule
     end
   end
 
-  def add_a_new_passenger
+  def self.add_a_new_passenger
     puts "Add a new passenger"
     print "Passenger name: "
     name = gets.chomp
